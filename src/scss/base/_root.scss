@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+:root {
+  @include theme-vars($colors);
+
+  @each $key, $value in $spacing {
+    --space-#{$key}: #{$value};
+  }
+}

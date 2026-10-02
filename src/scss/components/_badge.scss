@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.badge {
+  padding: var(--space-xs) var(--space-md);
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+
+  @each $name, $color in $skill-colors {
+    &--#{$name} {
+      background: $color;
+    }
+  }
+}

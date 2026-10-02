@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+// @each: buat utility margin-top & gap dari map $spacing
+@each $key, $value in $spacing {
+  .mt-#{$key} { margin-top: $value; }
+  .gap-#{$key} { gap: $value; }
+}

@@ -1,0 +1,44 @@
+// Variables: colors & spacing (syarat 2)
+$colors: (
+  'bg': #f8fafc,
+  'surface': #ffffff,
+  'text': #0f172a,
+  'muted': #64748b,
+  'primary': #6366f1,
+  'accent': #ec4899,
+  'border': #e2e8f0,
+);
+
+$colors-dark: (
+  'bg': #0b1020,
+  'surface': #141a2e,
+  'text': #e5e7eb,
+  'muted': #94a3b8,
+  'primary': #818cf8,
+  'accent': #f472b6,
+  'border': #263048,
+);
+
+$spacing: (
+  'xs': 0.25rem,
+  'sm': 0.5rem,
+  'md': 1rem,
+  'lg': 1.5rem,
+  'xl': 2.5rem,
+);
+
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 1024px,
+);
+
+$skill-colors: (
+  'html': #e34f26,
+  'css': #2965f1,
+  'scss': #cd6799,
+  'js': #d4a900,
+);
+
+$radius: 0.75rem;
+$font-base: 'Segoe UI', system-ui, -apple-system, sans-serif;

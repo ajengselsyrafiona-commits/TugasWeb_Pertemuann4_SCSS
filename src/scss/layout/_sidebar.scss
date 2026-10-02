@@ -1,0 +1,23 @@
+@use '../abstracts' as *;
+
+.sidebar {
+  grid-area: sidebar;
+  @include surface;
+  @include flex-center(column, space(md));
+  text-align: center;
+  align-self: start;
+
+  &__avatar {
+    @include flex-center;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  }
+
+  &__name { margin: 0; }
+  &__role { margin: 0; color: var(--color-muted); }
+}

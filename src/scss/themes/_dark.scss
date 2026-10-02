@@ -1,0 +1,8 @@
+@use '../abstracts' as *;
+
+// Bonus: dark mode otomatis
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include theme-vars($colors-dark);
+  }
+}

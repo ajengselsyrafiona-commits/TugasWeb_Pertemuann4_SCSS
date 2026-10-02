@@ -1,0 +1,113 @@
+@use '../abstracts' as *;
+
+.about {
+  display: grid;
+  gap: var(--space-xl);
+  align-items: center;
+
+  &__media {
+    order: 2;
+  }
+
+  &__figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 1.25rem;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+  }
+
+  &__content {
+    order: 1;
+
+    p {
+      max-width: 65ch;
+      color: var(--color-muted);
+    }
+  }
+}
+
+.fun-fact {
+  margin-top: var(--space-lg);
+  @include surface(1.25rem);
+
+  h3 {
+    margin-bottom: var(--space-sm);
+  }
+
+  li {
+    margin-top: var(--space-xs);
+  }
+}
+
+.hobbies {
+  &__grid {
+    display: grid;
+    gap: var(--space-md);
+  }
+}
+
+.hobby-card {
+  @include surface(1.5rem);
+
+  h3 {
+    color: var(--color-primary);
+  }
+
+  p {
+    margin: 0;
+    color: var(--color-muted);
+  }
+}
+
+.education {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.timeline-item {
+  @include surface(1.25rem);
+
+  h3 {
+    margin-bottom: var(--space-xs);
+  }
+
+  p {
+    margin: 0;
+    color: var(--color-muted);
+  }
+
+  &-time,
+  &__time {
+    display: inline-block;
+    margin-bottom: var(--space-sm);
+    color: var(--color-primary);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+}
+
+.contact {
+  & > p {
+    color: var(--color-muted);
+  }
+}
+
+@include respond(md) {
+  .about {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+
+    &__media {
+      order: 1;
+    }
+
+    &__content {
+      order: 2;
+    }
+  }
+
+  .hobbies__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

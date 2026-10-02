@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 0 0 var(--space-md);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 7vw, 4.75rem);
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+p {
+  margin: 0 0 var(--space-md);
+}

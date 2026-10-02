@@ -1,0 +1,7 @@
+// 7-1 pattern: 7 folder + 1 file utama. Semua pakai @use (bukan @import).
+@use 'vendors';
+@use 'base';
+@use 'layout';
+@use 'components';
+@use 'pages';
+@use 'themes';

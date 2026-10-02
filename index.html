@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajeng Selsyra Viona — Landing Page Pribadi</title>
+  <meta name="description" content="Landing page pribadi Ajeng Selsyra Viona, mahasiswi Ilmu Komputer  UNIMED. Berisi profil, hobi, riwayat pendidikan, dan kontak.">
+  <meta name="author" content="Ajeng Selsyra Viona">
+
+  <link rel="stylesheet" href="style.css">
+
+ 
+  <meta property="og:title" content="Ajeng Selsyra Viona — Landing Page Pribadi">
+  <meta property="og:description" content="Profil, hobi, riwayat pendidikan, dan kontak Ajeng Selsyra Viona.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+ 
+  <a class="skip-link" href="#konten-utama">Lompat ke konten utama</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="#beranda" class="logo" aria-label="Kembali ke beranda"><span class="logo__dot">.</span></a>
+
+      <nav class="nav" aria-label="Navigasi utama">
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#hobi">Hobi</a></li>
+          <li><a href="#pendidikan">Pendidikan</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten-utama">
+
+    <!-- ================= HERO ================= -->
+    <section id="beranda" class="hero">
+      <p class="eyebrow"></p>
+      <h1 class="hero__title">Ajeng Selsyra Viona</h1>
+      <p class="hero__role">Mahasiswi Ilmu Komputer · UNIMED</p>
+    
+
+      </p>
+
+    </section>
+
+    <!-- ================= TENTANG ================= -->
+    <section id="tentang" class="about">
+      <div class="about__media">
+        <figure class="about__figure">
+          <img
+            src="foro ajeng.jpeg"
+            alt="Foto profil Ajeng Selsyra Viona, mahasiswi Ilmu Komputer"
+            width="250"
+            height="300"
+            loading="lazy"
+          >
+        </figure>
+      </div>
+
+      <div class="about__content">
+  <h2>Tentang Saya</h2>
+        <p>
+         Saya adalah seorang pemula di bidang programming yang memiliki minat dalam teknologi dan pengembangan aplikasi. 
+        Saya terus belajar, mengembangkan kemampuan, dan membangun berbagai project untuk meningkatkan pengalaman saya sebagai programmer.
+        </p>
+        <p>
+          Di luar kelas, saya suka mengeksplorasi tools baru, mengikuti
+          workshop, dan membangun project-project kecil untuk latihan.
+        </p>
+
+        <aside class="fun-fact" aria-label="Info singkat tentang Ajeng">
+          <h3>Info Singkat</h3>
+          <ul>
+            <li><strong>Lokasi:</strong> Medan, Sumatera Utara</li>
+            <li><strong>Status:</strong> Mahasiswa aktif, semester 3</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= HOBI ================= -->
+    <section id="hobi" class="hobbies">
+      <h2>Hobi &amp; Minat</h2>
+
+      <ul class="hobbies__grid">
+        <li class="hobby-card">
+          <h3>💻Coding</h3>
+          <p>Membuat project web kecil untuk belajar hal baru.</p>
+        </li>
+        <li class="hobby-card">
+          <h3>📷Fotografi</h3>
+          <p>Suka memotret suasana kampus dan momen sehari-hari.</p>
+        </li>
+        <li class="hobby-card">
+          <h3>📚Membaca</h3>
+          <p>Baca artikel teknologi dan buku pengembangan diri.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ================= PENDIDIKAN ================= -->
+    <section id="pendidikan" class="education">
+      <h2>Riwayat Pendidikan</h2>
+
+      <article class="timeline-item">
+        <time datetime="2025" class="timeline-item-time">2025-Sekarang</time>
+        <h3>S1 Ilmu Komputer</h3>
+        <p>Universitas Negeri Medan (UNIMED)</p>
+      </article>
+
+      <article class="timeline-item">
+        <time datetime="2023/2025" class="timeline-item__time">2023-2025</time>
+        <h3>SMK Swasta Budi Agung Medan</h3>
+        <p>Jurusan Bisnis Digital</p>
+      </article>
+    </section>
+
+    <!-- ================= KONTAK ================= -->
+    <section id="kontak" class="contact">
+      <h2>Hubungi Saya</h2>
+      <p>Ada pertanyaan atau ingin kolaborasi? Isi form di bawah ini.</p>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            required
+            minlength="3"
+            aria-describedby="nama-error"
+            autocomplete="name"
+          >
+          <span class="form-error" id="nama-error" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-describedby="email-error"
+            autocomplete="email"
+          >
+          <span class="form-error" id="email-error" role="alert"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="5"
+            required
+            minlength="10"
+            aria-describedby="pesan-error"
+          ></textarea>
+          <span class="form-error" id="pesan-error" role="alert"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Kirim Pesan</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; <span id="year"></span> Ajeng Selsyra Viona. Dibuat untuk Tugas Pemrograman Web — UNIMED.</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/username" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:raka@example.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+<script type="module" src="/src/main.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
